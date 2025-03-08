@@ -469,8 +469,8 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
+    .navbar {
+        padding: 0.8rem 5%;
     }
 
     .nav-links {
@@ -548,6 +548,127 @@ footer {
     
     .service-card {
         padding: 2rem 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 1;
+    }
+
+    .logo img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .navbar .cta-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        margin-right: 1rem;
+    }
+
+    /* Fix hero section text */
+    .hero-content h1 {
+        font-size: 2.8rem; /* Smaller font size for mobile */
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    /* Fix services grid */
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Fix contact form */
+    .contact-container {
+        padding: 0 1rem;
+    }
+}
+
+/* Add medium screen sizes */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .about-content {
+        gap: 2rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.6rem 3%;
+    }
+
+    .navbar .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Adjust section padding */
+    .about, .services, .contact {
+        padding: 3rem 1rem;
+    }
+
+    /* Adjust buttons */
+    .cta-button {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9rem;
+        width: 100%; /* Full width on mobile */
+        max-width: 250px; /* Maximum width */
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Fix navigation */
+    .nav-links a {
+        padding: 0.5rem;
+        display: block;
+        width: 100%;
+    }
+
+    /* Adjust section titles */
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Fix for tablets in portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        padding: 6rem 3% 3rem;
+    }
+
+    .hero-image {
+        width: 45%;
+    }
+
+    .hero-content {
+        max-width: 55%;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
