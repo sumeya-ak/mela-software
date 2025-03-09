@@ -125,7 +125,7 @@ html {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 242, 235, 0.95) 100%);
 }
 
-/* Add clip path and overlay to hero image */
+/* Update hero image styles */
 .hero-image {
     position: absolute;
     right: 0;
@@ -133,7 +133,9 @@ html {
     width: 55%;
     height: 100%;
     z-index: 1;
-    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .hero-image::before {
@@ -145,9 +147,9 @@ html {
     height: 100%;
     background: linear-gradient(
         to right,
-        rgba(255, 255, 255, 0.95) 0%,
-        rgba(255, 255, 255, 0.7) 30%,
-        rgba(255, 255, 255, 0) 100%
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.5) 20%,
+        rgba(255, 255, 255, 0) 50%
     );
     z-index: 2;
 }
@@ -165,6 +167,8 @@ html {
     z-index: 2;
     max-width: 50%;
     padding-right: 3rem;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .hero-content h1 {
@@ -503,7 +507,6 @@ footer {
         position: relative;
         width: 100%;
         height: 300px;
-        clip-path: none;
         margin-top: 2rem;
     }
 
@@ -706,6 +709,12 @@ footer {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Remove hero section from reveal animations */
+#home {
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 /* Particle Background */

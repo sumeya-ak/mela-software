@@ -23,10 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize AOS
+    // Initialize AOS with adjusted settings
     AOS.init({
-        duration: 1000,
-        once: true
+        duration: 800,
+        once: true,
+        offset: 100,
+        delay: 100
+    });
+
+    // Immediately show hero section
+    const heroContent = document.querySelector('.hero-content');
+    const heroImage = document.querySelector('.hero-image');
+    
+    // Remove scroll reveal from hero section
+    if (heroContent) {
+        heroContent.classList.remove('reveal');
+        heroContent.style.opacity = '1';
+        heroContent.style.transform = 'none';
+    }
+    if (heroImage) {
+        heroImage.classList.remove('reveal');
+        heroImage.style.opacity = '1';
+        heroImage.style.transform = 'none';
+    }
+
+    // Only add reveal class to sections after hero
+    const sections = document.querySelectorAll('section:not(#home)');
+    sections.forEach(section => {
+        section.classList.add('reveal');
     });
 
     // Initialize Particles.js
