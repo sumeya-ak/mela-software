@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
     --primary-color: #ff6b00;
     --secondary-color: #000000;
@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navbar Styles */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -128,7 +128,7 @@ html {
     );
 }
 
-/* Update hero image styles */
+
 .hero-image {
     position: absolute;
     right: 0;
@@ -164,7 +164,7 @@ html {
     object-position: center;
 }
 
-/* Update hero content positioning */
+
 .hero-content {
     position: relative;
     z-index: 2;
@@ -193,7 +193,7 @@ html {
     max-width: 600px;
 }
 
-/* Add a decorative shape */
+
 .hero::after {
     content: '';
     position: absolute;
@@ -208,7 +208,7 @@ html {
     pointer-events: none;
 }
 
-/* Update About Section Layout */
+
 .about {
     padding: 8rem 5%;
     background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
@@ -246,11 +246,11 @@ html {
     border-radius: 3px;
 }
 
-/* Update About Image styles */
+
 .about-image {
     flex: 1;
-    max-width: 500px; /* Increased from 350px */
-    margin-right: 2rem; /* Add space between image and text */
+    max-width: 500px; 
+    margin-right: 2rem; 
 }
 
 .about-image img {
@@ -261,7 +261,7 @@ html {
     object-fit: cover;
 }
 
-/* Update about text styles */
+
 .about-text {
     flex: 1;
     padding: 2.5rem;
@@ -285,7 +285,7 @@ html {
     font-size: 1.1rem;
 }
 
-/* Update about content layout */
+
 .about-content {
     display: flex;
     align-items: center;
@@ -295,7 +295,7 @@ html {
     gap: 4rem;
 }
 
-/* Services Section */
+
 .services {
     padding: 5rem 5%;
     background-color: var(--white);
@@ -358,7 +358,7 @@ html {
     line-height: 1.6;
 }
 
-/* Contact Section */
+
 .contact {
     background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
     padding: 6rem 5%;
@@ -372,7 +372,7 @@ html {
     margin: 0 auto;
 }
 
-/* Form Styles */
+
 .contact-form {
     background: #fff;
     padding: 2rem;
@@ -402,7 +402,7 @@ html {
     border-radius: 6px;
 }
 
-/* Contact Info Styles */
+
 .contact-info {
     padding: 1.5rem;
     background: #fff;
@@ -426,7 +426,7 @@ html {
     font-size: 0.95rem;
 }
 
-/* Footer Styles */
+
 footer {
     background: var(--secondary-color);
     padding: 3rem 5%;
@@ -481,7 +481,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive Footer */
+
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -494,7 +494,7 @@ footer {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0.8rem 5%;
@@ -553,7 +553,7 @@ footer {
     }
 
     .about-image {
-        max-width: 400px; /* Increased from 280px for mobile */
+        max-width: 400px; 
         margin: 0 auto;
     }
 
@@ -607,9 +607,9 @@ footer {
         margin-right: 1rem;
     }
 
-    /* Fix hero section text */
+    
     .hero-content h1 {
-        font-size: 2.8rem; /* Smaller font size for mobile */
+        font-size: 2.8rem;
     }
 
     .hero-content p {
@@ -617,20 +617,20 @@ footer {
         max-width: 100%;
     }
 
-    /* Fix services grid */
+    
     .services-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr; 
         max-width: 400px;
         margin: 0 auto;
     }
 
-    /* Fix contact form */
+  
     .contact-container {
         padding: 0 1rem;
     }
 }
 
-/* Add medium screen sizes */
+
 @media (max-width: 1024px) {
     .hero-content h1 {
         font-size: 3.5rem;
@@ -641,7 +641,7 @@ footer {
     }
 }
 
-/* Extra small screens */
+
 @media (max-width: 480px) {
     .navbar {
         padding: 0.6rem 3%;
@@ -660,36 +660,36 @@ footer {
         font-size: 1rem;
     }
 
-    /* Adjust section padding */
+  
     .about, .services, .contact {
         padding: 3rem 1rem;
     }
 
-    /* Adjust buttons */
+    
     .cta-button {
         padding: 0.7rem 1.4rem;
         font-size: 0.9rem;
-        width: 100%; /* Full width on mobile */
-        max-width: 250px; /* Maximum width */
+        width: 100%;
+        max-width: 250px; 
         margin: 0 auto;
         display: block;
     }
 
-    /* Fix navigation */
+  
     .nav-links a {
         padding: 0.5rem;
         display: block;
         width: 100%;
     }
 
-    /* Adjust section titles */
+    
     section h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
 }
 
-/* Fix for tablets in portrait mode */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .hero {
         padding: 6rem 3% 3rem;
@@ -708,7 +708,7 @@ footer {
     }
 }
 
-/* Enhanced Animation Keyframes */
+
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
@@ -732,7 +732,7 @@ footer {
     }
 }
 
-/* Scroll Reveal Animation */
+
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -744,13 +744,13 @@ footer {
     transform: translateY(0);
 }
 
-/* Remove hero section from reveal animations */
+
 #home {
     opacity: 1 !important;
     transform: none !important;
 }
 
-/* Particle Background */
+
 #particles-js {
     position: absolute;
     top: 0;
@@ -761,7 +761,7 @@ footer {
     pointer-events: none;
 }
 
-/* Add shine animation */
+
 @keyframes shine {
     0% {
         background-position: -100% 0;
@@ -771,7 +771,7 @@ footer {
     }
 }
 
-/* Enhance section titles */
+
 section h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -798,9 +798,9 @@ section h2::after {
     50% { opacity: 0.8; }
 }
 
-/* Update mobile responsive styles */
+
 @media (max-width: 768px) {
-    /* Hero section mobile fixes */
+    
     .hero {
         padding: 6rem 1rem 2rem;
         min-height: auto;
@@ -837,7 +837,7 @@ section h2::after {
         object-fit: cover;
     }
 
-    /* About section mobile fixes */
+  
     .about {
         padding: 4rem 1rem;
     }
@@ -857,7 +857,7 @@ section h2::after {
         padding: 1.5rem;
     }
 
-    /* Button fixes */
+   
     .cta-button {
         padding: 0.8rem 2rem;
         font-size: 1rem;
@@ -867,7 +867,7 @@ section h2::after {
         display: inline-block;
     }
 
-    /* Navigation fixes */
+   
     .navbar {
         padding: 0.8rem 1rem;
     }
@@ -878,7 +878,7 @@ section h2::after {
     }
 }
 
-/* Extra small screens */
+
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;
